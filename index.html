@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Thank You</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Comfortaa:700|Roboto:900|Russo+One');
+
+        body {
+            background: #999;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .heart {
+            color: red;
+            position: fixed;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%, -50%);
+            font-size: 300px;
+            animation: heart 5s linear infinite;
+        }
+
+        .text {
+            margin-top: 50vh;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .text p {
+            font-size: 0px;
+            font-family: 'Russo One', sans-serif;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+            animation: showup 5s infinite;
+        }
+
+        .text p:nth-child(1) { animation-delay: 0s; }
+        .text p:nth-child(2) { animation-delay: 0.2s; }
+        .text p:nth-child(3) { animation-delay: 0.4s; }
+        .text p:nth-child(4) { animation-delay: 0.6s; }
+        .text p:nth-child(5) { animation-delay: 0.8s; }
+        .text p:nth-child(6) { animation-delay: 1s; }
+        .text p:nth-child(7) { animation-delay: 1.2s; }
+        .text p:nth-child(8) { animation-delay: 1.4s; }
+        .text p:nth-child(9) { animation-delay: 1.6s; }
+
+        @keyframes showup {
+            0% { font-size: 0px; transform: rotate(90deg); opacity: 0; }
+            10% { font-size: 66px; transform: rotate(0deg); opacity: 1; }
+            60% { font-size: 66px; opacity: 1; }
+            71% { opacity: 0; }
+            100% { opacity: 0; font-size: 66px; transform: rotate(0deg); }
+        }
+
+        @keyframes heart {
+            0% { opacity: 0; }
+            30% { opacity: 0; }
+            40% { opacity: 1; }
+            70% { opacity: 1; }
+            80% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+        
+        .message {
+            margin-top: px;
+            font-size: 24px;
+            font-weight: bold;
+            animation: fadeIn 5s ease-in-out infinite;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="heart">❤</div>
+
+    <div class="text">
+        <p>T</p>
+        <p>H</p>
+        <p>A</p>
+        <p>N</p>
+        <p>K</p>
+        <p>&nbsp;</p>
+        <p>Y</p>
+        <p>O</p>
+        <p>U</p>
+    </div>
+<div class="message">For sharing these images with me!</div>
+</body>
+</html>
+
+
+
